@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BREAKWATER — a three.js tactical FPS</title>
+<link rel="stylesheet" href="style.css" />
+<script type="importmap">
+{ "imports": { "three": "./vendor/three/three.module.min.js" } }
+</script>
+</head>
+<body>
+<div id="hud">
+  <div id="vignette"></div>
+  <div id="flash"></div>
+  <div id="scope"></div>
+  <div id="dmgdir"></div>
+  <div id="crosshair"><span class="t"></span><span class="b"></span><span class="l"></span><span class="r"></span><span class="dot"></span></div>
+  <div id="hitmark">✕</div>
+  <div id="topbar">
+    <div id="roundnum"></div>
+    <div id="timer"></div>
+    <div id="score"></div>
+    <div id="phase"></div>
+    <div id="planted">⚠ CHARGE PLANTED ⚠</div>
+  </div>
+  <div id="feed"></div>
+  <div id="banner"></div>
+  <div id="bannerSub"></div>
+  <div id="bl">
+    <div id="hp"></div>
+    <div id="armor"></div>
+    <div id="money"></div>
+  </div>
+  <div id="br">
+    <div id="weapon"></div>
+    <div id="ammo"></div>
+    <div id="hint">R reload · E plant · G grenade · Tab scores</div>
+  </div>
+  <div id="channel"><div class="chanlabel">PLANTING…</div><div class="track"><div id="channelBar"></div></div></div>
+  <div id="spectate">ELIMINATED — spectating your team</div>
+  <div id="buymenu">
+    <div class="buyhead">BUY MENU <span id="money2"></span></div>
+    <div id="buyitems"></div>
+    <div class="buyfoot">Press 1–9 to buy · weapons &amp; gear last while you survive</div>
+  </div>
+  <div id="board"></div>
+</div>
+<div id="menu">
+  <div id="menuTitle">BREAKWATER</div>
+  <div id="menuSub"></div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
